@@ -1,0 +1,182 @@
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif; }
+  body .container {
+    height: 600px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 25px; }
+    body .container h1 {
+      margin-bottom: 50px;
+      color: #337ab7;
+      font-size: 20px;
+      margin-top: 22px; }
+  body #main-content .item {
+    opacity: 0;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s; }
+    body #main-content .item.showMe {
+      opacity: 1; }
+  body .bb {
+    border-bottom: 1px solid #ddd; }
+  body .me {
+    background-image: url("images/me.png");
+    width: 50px;
+    background-size: contain;
+    height: 66px;
+    background-repeat: no-repeat;
+    display: inline-block; }
+  body .title-name {
+    display: inline-block;
+    vertical-align: top; }
+  body h2 {
+    font-size: 28px; }
+  body h3 {
+    font-size: 16px; }
+  body h2, body h3 {
+    margin-top: 0;
+    vertical-align: top; }
+  body .pad-simple {
+    padding-left: 10px;
+    padding-right: 10px; }
+  body .pdf {
+    background-image: url("images/pdf_icon.png");
+    width: 40px;
+    height: 80px;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    cursor: pointer; }
+    body .pdf:after {
+      content: 'resume';
+      position: relative;
+      top: 44px;
+      font-size: 12px;
+      left: 1px; }
+  body p {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center; }
+  body .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    margin-right: 10px;
+    background-size: contain;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.6);
+    -webkit-backface-visibility: hidden;
+    border: 1px solid transparent; }
+    body .icon.acrobat {
+      background-image: url("images/icon-acrobat.png"); }
+    body .icon.angular {
+      background-image: url("images/icon-angular.png"); }
+    body .icon.aftereffects {
+      background-image: url("images/icon-aftereffects.png"); }
+    body .icon.audition {
+      background-image: url("images/icon-audition.png"); }
+    body .icon.flash {
+      background-image: url("images/icon-flash.png"); }
+    body .icon.photoshop {
+      background-image: url("images/icon-photoshop.png"); }
+    body .icon.css {
+      background-image: url("images/icon-css.png"); }
+    body .icon.premiere {
+      background-image: url("images/icon-premiere.png"); }
+    body .icon.javascript {
+      background-image: url("images/icon-javascript.png"); }
+  body .project-container {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.74902) 0px 2px 5px 0px;
+    width: 100%;
+    cursor: pointer; }
+  body .project {
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.74902) 0px 2px 5px 0px;
+    height: 168px;
+    position: relative;
+    padding: 0;
+    margin-bottom: 160px;
+    background-color: #555;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    body .project .item-container {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #ddd;
+      text-align: center;
+      width: 30px;
+      font-size: 14px;
+      z-index: 9;
+      border-left: 1px solid #337ab7; }
+      body .project .item-container .name {
+        -webkit-transform: rotate(-90deg);
+        /* Safari */
+        transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        height: 190px;
+        z-index: 9;
+        position: relative;
+        left: -50px;
+        top: -12px;
+        width: 300px;
+        font-size: 12px;
+        pointer-events: none; }
+    body .project .info {
+      margin-top: 7px;
+      margin-bottom: 5px; }
+    body .project .description {
+      display: block;
+      display: block;
+      position: absolute;
+      bottom: -63px;
+      border-top: 1px solid rgba(0, 0, 0, 0.4);
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 13px;
+      line-height: 14px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      min-height: 60px;
+      max-height: 60px;
+      width: 100%; }
+      body .project .description .strong {
+        font-weight: bold; }
+  body .key .mt {
+    position: relative;
+    top: 20px; }
+  body .key .key-val {
+    display: inline-block;
+    margin-left: 40px;
+    width: 120px; }
+  body .key .name {
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    display: inline-block; }
+  body .key .icon {
+    display: inline-block;
+    top: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: auto;
+    box-shadow: none;
+    margin-bottom: 20px; }
+
+@media (max-width: 420px) {
+  body .me, body .pdf {
+    display: block;
+    margin: 0 auto;
+    float: none; }
+  .title-name {
+    width: 100%;
+    text-align: center; } }
