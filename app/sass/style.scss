@@ -48,6 +48,16 @@ header{
 
 	}
 }
+button{
+	font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+    padding: 9px 0 7px 0;
+    margin-top: 20px;
+		background-color: #578c9a;
+color: #fff;
+}
 .logo-and-tag{
 	position: relative;
 	background-color:$blue;
@@ -72,6 +82,13 @@ footer{
 	color:#fff;
 //	background-color:#5bb3c6;
   height:160px;
+	em{
+		color:$lightGrey;
+		font-size:24px;
+		padding:5px;
+		border:1px solid $lightGrey;
+		border-radius:3px;
+	}
 }
 h1,h2,h3,h4,h5{
 	font-family: 'Titillium Web', sans-serif;
@@ -79,6 +96,10 @@ h1,h2,h3,h4,h5{
 h3{
 	font-weight: 600;
 	color: $red;
+	font-weight: 500;
+//  color: #aa4b41;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 main.light{
 	position: relative;

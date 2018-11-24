@@ -19,11 +19,14 @@ $(document).ready(function(){
     winTop = $(window).scrollTop();
 
     diff = headerHeight - winTop;
-      console.log('diff',diff)
+      console.log('diff',diff);
+       // $('body .both').css({'transform': 'translate3d(0,'+(winTop * -1)+'px,0'});
+       // $('body header .bg').css({'transform': 'translate3d(0,'+winTop+'px,0'});
     if(diff < 50){
+
       $('body').addClass('shrinkLogo');
-      // $('body .both').css({'transform': 'translate3d(0,'+(winTop * -1)+'px,0'});
-      // $('body header .bg').css({'transform': 'translate3d(0,'+winTop+'px,0'});
+       $('body .both').css({'transform': 'translate3d(0,'+((diff - 50 + winTop) * -1)+'px,0'});
+      $('body header .bg').css({'transform': 'translate3d(0,'+(diff - 50 + winTop)+'px,0'});
 
     }
 

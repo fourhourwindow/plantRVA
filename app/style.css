@@ -22,6 +22,16 @@ header {
     height: 100%;
     top: 0; }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
+  padding: 9px 0 7px 0;
+  margin-top: 20px;
+  background-color: #578c9a;
+  color: #fff; }
+
 .logo-and-tag {
   position: relative;
   background-color: #578c9a; }
@@ -47,13 +57,22 @@ footer {
   background-color: #4c4846;
   color: #fff;
   height: 160px; }
+  footer em {
+    color: #d5d6d2;
+    font-size: 24px;
+    padding: 5px;
+    border: 1px solid #d5d6d2;
+    border-radius: 3px; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Titillium Web', sans-serif; }
 
 h3 {
   font-weight: 600;
-  color: #aa4b41; }
+  color: #aa4b41;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase; }
 
 main.light {
   position: relative;
