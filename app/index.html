@@ -28,39 +28,55 @@
 </head>
 <body>
   <nav>navigation</nav>
-  <header>
+  <div class="both">
+    <header>
+      <div class="bg"></div>
+      <div class="logo-shadow"></div>
+    </header>
 
 
-    <div class="logo-shadow">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+    <div class="logo-and-tagline">
+      <div class="container height100">
+        <div class="row height100">
+          <div class="col-sm-12 height100">
             <h1>plant<span>RVA</span></h1>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-
-    <div class="container main">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2><span>&ldquo;The art of simplicity</span><span class="right">is a puzzle of complexity&rdquo;</span></h2>
-          <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+      <div class="colored-band">
+        <div class="container">
+          <div class="row tagline">
+            <div class="col-sm-12">
+              <h2><span>&ldquo;The art of simplicity</span><span class="right">is a puzzle of complexity&rdquo;</span></h2>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-      <div class="col-sm-12 col-md-4">
-        <div class="product-box"><h3>websites</h3><div class="bg"></div></div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="product-box apps"><h3>apps & software</h3><div class="bg"></div></div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="product-box elearning"><h3>eLearning</h3><div class="bg"></div></div>
-      </div>
-      </div>
     </div>
+
+  </div>
+
+    <main class="light">
+      <div class="container">
+        <div class="row pad-top pad-bottom">
+          <div class="col-sm-12">
+            <p>We specialize in creating memorable, interactive products that focus on your customers and/or employees.</p>
+          </div>
+        </div>
+        <div class="row products pad-bottom">
+          <div class="col-sm-4">
+            <div class="product-box websites"><h3>websites</h3><div class="bg"></div></div>
+          </div>
+          <div class="col-sm-4">
+            <div class="product-box apps"><h3>apps & software</h3><div class="bg"></div></div>
+          </div>
+          <div class="col-sm-4">
+
+            <div class="product-box elearning"><h3>eLearning</h3><div class="bg"></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
@@ -72,7 +88,7 @@
     <script src="main.js"></script>
 
 
-    <script src="components/version/interpolate-filter.js"></script>
+
     <footer>&copy;<span class="year"></span><span> plant RVA</span></footer>
 </body>
 </html>

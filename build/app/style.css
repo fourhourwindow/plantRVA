@@ -1,8 +1,7 @@
 body {
   font-family: 'Comfortaa', cursive;
   font-weight: 400;
-  background-color: #d5d6d2;
-  color: #353c3f; }
+  color: #fff; }
 
 nav {
   display: none;
@@ -10,17 +9,28 @@ nav {
   height: 60px; }
 
 header {
-  background-image: url(../images/machine5.png);
-  background-size: cover;
+  overflow: hidden;
   width: 100%;
   height: 30vw;
-  background-color: #fff;
-  position: relative; }
+  position: absolute;
+  background-color: #fff; }
+  header .bg {
+    background-image: url(../images/machine4.png);
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    top: 0;
+    position: fixed; }
+
+.logo-and-tag {
+  position: relative;
+  background-color: #578c9a; }
 
 .logo-shadow {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 100px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0.8+100 */
   background: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.8) 100%);
   /* FF3.6-15 */
@@ -34,36 +44,122 @@ header {
 footer {
   margin-top: 100px;
   width: 100%;
-  background-color: #5bb3c6;
+  background-color: #4c4846;
+  color: #fff;
   height: 160px; }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
   font-family: 'Titillium Web', sans-serif; }
 
+h3 {
+  font-weight: 600;
+  color: #aa4b41; }
+
+section.light {
+  position: relative;
+  background-color: #eeeeee;
+  color: #4c4846; }
+
 h1 {
+  transform-origin: bottom left;
+  transition-duration: .5s;
+  z-index: 12;
   padding: 70px 0 0 0;
   margin: 0;
-  position: relative;
-  bottom: -11px;
+  position: absolute;
+  bottom: -16px;
   color: #fff;
-  font-size: 60px;
-  font-weight: 500; }
+  font-size: 90px;
+  font-weight: 500;
+  text-shadow: -2px -1px #333; }
+  h1 span {
+    font-size: 33px; }
 
-.main h2 {
+p {
+  font-size: 20px; }
+
+.logo-and-tagline {
+  height: 30vw;
+  border: 1px solid red; }
+
+.height100 {
+  height: 100%; }
+
+.colored-band {
+  background-color: #578c9a;
+  height: 70px;
+  position: absolute;
+  z-index: 9;
+  border: 0;
+  width: 100%;
+  left: 0; }
+
+.tagline h2 {
   position: relative;
-  top: 3px;
+  top: 8px;
   margin-top: 0;
-  margin-bottom: 60px;
-  max-width: 236px;
-  font-size: 19px; }
-  .main h2 span.right {
+  margin-bottom: 40px;
+  margin-left: 22px;
+  max-width: 264px;
+  font-size: 19px;
+  font-style: italic;
+  color: #fff;
+  z-index: 2; }
+  .tagline h2 span.right {
     float: right; }
 
+.pad-top {
+  padding-top: 5vw; }
+
+.pad-top-half {
+  padding-top: 2.5vw; }
+
+.pad-bottom {
+  padding-bottom: 5vw; }
+
+.pad-bottom-half {
+  padding-bottom: 2.5vw; }
+
 .product-box {
-  height: 20vw;
+  height: 24vw;
   text-align: center;
-  border: 1px solid #fefefe;
+  text-align: center;
   border-radius: 3px; }
+  .product-box .bg {
+    background-image: url(../images/brain.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center; }
+  .product-box.elearning .bg {
+    background-image: url(../images/brain.png); }
+  .product-box.apps .bg {
+    background-image: url(../images/phone.png); }
+  .product-box.websites .bg {
+    background-image: url(../images/website.png); }
 
 .outline {
   border: 1px solid #888; }
+
+body.shrinkLogo header .bg {
+  position: relative; }
+
+body.shrinkLogo .light {
+  padding-top: 210px; }
+
+body.shrinkLogo .both {
+  position: fixed;
+  z-index: 99;
+  width: 100%; }
+
+body.shrinkLogo h1 {
+  transform: scale(0.5) translate3d(0, -17px, 0); }
+
+@media (max-width: 768px) {
+  header {
+    height: 40vw; } }
+
+@media (max-width: 600px) {
+  header {
+    height: 60vw; } }
